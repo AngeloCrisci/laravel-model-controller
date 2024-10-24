@@ -1,6 +1,6 @@
 @extends("layouts.app")
 
-@section("page-title", "Homepage")
+@section("page-title", "Movies")
 
 @section("main-content")
 
@@ -8,7 +8,7 @@
     <div class="row">
 @forelse ( $movies as $movie )
         <div class="col-3 p-3">
-            <div class="card h-100" style="width: 18rem;">
+            <div class=" h-100" style="width: 18rem;">
                 <div class="card-body">
                     <h5 class="card-title">Titolo originale: {{ $movie->original_title  }}</h5>
                     <h6 class="card-subtitle mb-2 text-body-secondary">Titolo Ita: {{ $movie->title }}</h6>
